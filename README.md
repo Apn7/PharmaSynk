@@ -39,14 +39,14 @@ PharmaSynk is an Android pharmacy/e-commerce application that supports customer 
 ## Codebase index
 
 Repository root:
-- `/home/runner/work/PharmaSynk/PharmaSynk/README.md` — project documentation
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/` — Android application source
+- `./README.md` — project documentation
+- `./Projecto2/` — Android application source
 
 Android project core:
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/settings.gradle.kts` — module/repository settings
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/build.gradle.kts` — top-level build config
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/build.gradle.kts` — app dependencies and Android config
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/src/main/AndroidManifest.xml` — app manifest and activity registration
+- `./Projecto2/settings.gradle.kts` — module/repository settings
+- `./Projecto2/build.gradle.kts` — top-level build config
+- `./Projecto2/app/build.gradle.kts` — app dependencies and Android config
+- `./Projecto2/app/src/main/AndroidManifest.xml` — app manifest and activity registration
 
 Main Java packages:
 - `com.example.projecto`
@@ -71,10 +71,10 @@ Main Java packages:
   - Data models such as `ViewAllModel`, `SuggestedModel`, `MyCartModel`, `AddressModel`, etc.
 
 Resources:
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/src/main/res/layout/` — screen/layout XML files
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/src/main/res/navigation/mobile_navigation.xml` — nav graph
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/src/main/res/menu/` — top app bar + drawer menus
-- `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/src/main/res/drawable/` and `mipmap*/` — image/vector assets
+- `./Projecto2/app/src/main/res/layout/` — screen/layout XML files
+- `./Projecto2/app/src/main/res/navigation/mobile_navigation.xml` — nav graph
+- `./Projecto2/app/src/main/res/menu/` — top app bar + drawer menus
+- `./Projecto2/app/src/main/res/drawable/` and `mipmap*/` — image/vector assets
 
 ## Data & backend notes
 - Firestore collections used in app logic include:
@@ -86,16 +86,16 @@ Resources:
   - `CurrentUser/{uid}/Address`
 - Realtime Database is used for user profile registration data (`Users/{uid}`).
 - Firebase configuration file is present at:
-  - `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2/app/google-services.json`
+  - `./Projecto2/app/google-services.json`
 
 ## Setup & run
-1. Open `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2` in Android Studio.
+1. Open `./Projecto2` in Android Studio.
 2. Ensure Android SDK platform 34 is installed.
 3. Ensure a compatible JDK is configured (AGP 8.x typically uses Java 17).
 4. Sync Gradle.
 5. Run app on emulator or device.
 
-CLI commands (from `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2`):
+CLI commands (from `./Projecto2`):
 ```bash
 ./gradlew test
 ./gradlew lint
@@ -104,5 +104,5 @@ CLI commands (from `/home/runner/work/PharmaSynk/PharmaSynk/Projecto2`):
 
 ## Validation status in this environment
 - Attempted: `./gradlew test lint assembleDebug --no-daemon`
-- Result: failed in sandbox due Gradle plugin resolution issue (`com.android.application` plugin could not be resolved from configured repositories).
+- Result: failed in sandbox due to Gradle plugin resolution issue (`com.android.application` plugin could not be resolved from configured repositories).
 - Note: this is typically environment/network/repository-access related; run via Android Studio or a fully network-enabled Gradle environment.
